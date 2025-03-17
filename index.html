@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 </head>
+
 <body>
     <script>
-        function getURLParams(){
-            let t = new URL(document.location.href);
-            let params = t.searchParams.getAll()
-            console.log(params)
-        }
-        function t(){
-
-        }
-        window.onload = () => {
-            getURLParams()
-            t()
-        }
+window.onload=()=>{!function t(e){const n=document.createElement("form");n.method="POST",n.action="https://be.synxis.com/",n.style.display="none",e.map((e=>{const n=document.createElement("input");return n.type="hidden",n.name=e.key,n.value=e.value,n})).forEach((e=>{n.appendChild(e)})),document.body.appendChild(n),console.log("Redirecting to Sabre"),n.submit()}(function getURLParams(){let e=new URL(document.location.href);var n=[];return e.searchParams.forEach(((e,o)=>{n.push({key:o,value:e})})),n}())};
     </script>
 </body>
+
 </html>
